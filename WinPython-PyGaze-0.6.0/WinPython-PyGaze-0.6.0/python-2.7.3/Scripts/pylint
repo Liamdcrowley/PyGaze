@@ -1,0 +1,3 @@
+#!D:\winpython\basedir27\build\winpython-2.7.3\python-2.7.3\python.exe
+from pylint import run_pylint
+run_pylint()

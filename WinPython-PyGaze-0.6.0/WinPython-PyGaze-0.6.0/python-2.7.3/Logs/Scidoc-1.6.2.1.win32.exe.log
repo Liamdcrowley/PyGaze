@@ -1,0 +1,16 @@
+# WPPM package installation log
+# 
+# Package: Scidoc v1.6.2.1
+
+Lib\site-packages\Scidoc-1.6.2.1-py2.7.egg-info
+.\Doc
+.\Doc\Cython.chm
+.\Doc\guidatadoc.chm
+.\Doc\guiqwtdoc.chm
+.\Doc\HDF5forPythondoc.chm
+.\Doc\Matplotlib.pdf
+.\Doc\numpy.chm
+.\Doc\PyQwtdoc.chm
+.\Doc\Qwt52.chm
+.\Doc\scipy-ref.pdf
+.\Doc\Sphinxdoc.chm

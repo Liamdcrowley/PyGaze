@@ -1,0 +1,19 @@
+# WPPM package installation log
+# 
+# Package: PyWavelets v0.2.2
+
+Lib\site-packages\PyWavelets-0.2.2-py2.7.egg-info
+Lib\site-packages\pywt
+Lib\site-packages\PyWavelets-0.2.2-py2.7.egg-info\dependency_links.txt
+Lib\site-packages\PyWavelets-0.2.2-py2.7.egg-info\not-zip-safe
+Lib\site-packages\PyWavelets-0.2.2-py2.7.egg-info\PKG-INFO
+Lib\site-packages\PyWavelets-0.2.2-py2.7.egg-info\SOURCES.txt
+Lib\site-packages\PyWavelets-0.2.2-py2.7.egg-info\top_level.txt
+Lib\site-packages\pywt\functions.py
+Lib\site-packages\pywt\multidim.py
+Lib\site-packages\pywt\multilevel.py
+Lib\site-packages\pywt\numerix.py
+Lib\site-packages\pywt\thresholding.py
+Lib\site-packages\pywt\wavelet_packets.py
+Lib\site-packages\pywt\_pywt.pyd
+Lib\site-packages\pywt\__init__.py

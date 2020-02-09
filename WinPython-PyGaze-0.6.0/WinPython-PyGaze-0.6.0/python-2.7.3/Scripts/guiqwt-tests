@@ -1,0 +1,3 @@
+#!X:\Python27\python.exe
+from guiqwt import tests
+tests.run()

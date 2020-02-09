@@ -1,0 +1,22 @@
+------------------------------------------------------------
+C:\Anaconda\Scripts\pip-script.py run on 08/23/16 12:48:05
+Downloading/unpacking opencv
+  Getting page https://pypi.python.org/simple/opencv/
+  URLs to search for versions for opencv:
+  * https://pypi.python.org/simple/opencv/
+  Analyzing links from page https://pypi.python.org/simple/opencv/
+  Could not find any downloads that satisfy the requirement opencv
+Cleaning up...
+  Removing temporary dir c:\users\user\appdata\local\temp\pip_build_User...
+No distributions at all found for opencv
+Exception information:
+Traceback (most recent call last):
+  File "C:\Anaconda\lib\site-packages\pip\basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "C:\Anaconda\lib\site-packages\pip\commands\install.py", line 274, in run
+    requirement_set.prepare_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "C:\Anaconda\lib\site-packages\pip\req.py", line 1166, in prepare_files
+    url = finder.find_requirement(req_to_install, upgrade=self.upgrade)
+  File "C:\Anaconda\lib\site-packages\pip\index.py", line 277, in find_requirement
+    raise DistributionNotFound('No distributions at all found for %s' % req)
+DistributionNotFound: No distributions at all found for opencv

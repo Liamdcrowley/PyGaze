@@ -1,0 +1,25 @@
+# WPPM package installation log
+# 
+# Package: pyhdf v0.8.3
+
+Lib\site-packages\pyhdf
+Lib\site-packages\pyhdf-0.8.3-py2.7.egg-info
+Lib\site-packages\pyhdf\error.py
+Lib\site-packages\pyhdf\HC.py
+Lib\site-packages\pyhdf\HDF.py
+Lib\site-packages\pyhdf\HDFDLL.DLL
+Lib\site-packages\pyhdf\hdfext.py
+Lib\site-packages\pyhdf\MFHDFDLL.DLL
+Lib\site-packages\pyhdf\SD.py
+Lib\site-packages\pyhdf\sdext.py
+Lib\site-packages\pyhdf\SZ.DLL
+Lib\site-packages\pyhdf\V.py
+Lib\site-packages\pyhdf\VS.py
+Lib\site-packages\pyhdf\XDRDLL.DLL
+Lib\site-packages\pyhdf\ZLIB1.DLL
+Lib\site-packages\pyhdf\_hdfext.pyd
+Lib\site-packages\pyhdf\__init__.py
+Lib\site-packages\pyhdf-0.8.3-py2.7.egg-info\dependency_links.txt
+Lib\site-packages\pyhdf-0.8.3-py2.7.egg-info\PKG-INFO
+Lib\site-packages\pyhdf-0.8.3-py2.7.egg-info\SOURCES.txt
+Lib\site-packages\pyhdf-0.8.3-py2.7.egg-info\top_level.txt

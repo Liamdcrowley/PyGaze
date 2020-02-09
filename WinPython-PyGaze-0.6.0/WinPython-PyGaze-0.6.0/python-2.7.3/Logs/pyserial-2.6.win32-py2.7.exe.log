@@ -1,0 +1,29 @@
+# WPPM package installation log
+# 
+# Package: pyserial v2.6
+
+Lib\site-packages\serial
+Lib\site-packages\pyserial-2.6-py2.7.egg-info
+Lib\site-packages\serial\tools
+Lib\site-packages\serial\urlhandler
+Lib\site-packages\serial\rfc2217.py
+Lib\site-packages\serial\serialcli.py
+Lib\site-packages\serial\serialjava.py
+Lib\site-packages\serial\serialposix.py
+Lib\site-packages\serial\serialutil.py
+Lib\site-packages\serial\serialwin32.py
+Lib\site-packages\serial\sermsdos.py
+Lib\site-packages\serial\win32.py
+Lib\site-packages\serial\__init__.py
+Lib\site-packages\serial\tools\list_ports.py
+Lib\site-packages\serial\tools\list_ports_posix.py
+Lib\site-packages\serial\tools\list_ports_windows.py
+Lib\site-packages\serial\tools\miniterm.py
+Lib\site-packages\serial\tools\__init__.py
+Lib\site-packages\serial\urlhandler\protocol_hwgrep.py
+Lib\site-packages\serial\urlhandler\protocol_loop.py
+Lib\site-packages\serial\urlhandler\protocol_rfc2217.py
+Lib\site-packages\serial\urlhandler\protocol_socket.py
+Lib\site-packages\serial\urlhandler\__init__.py
+Scripts\miniterm.py
+Scripts\miniterm.bat

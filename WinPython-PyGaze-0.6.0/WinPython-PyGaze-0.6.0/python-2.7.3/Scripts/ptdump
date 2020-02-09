@@ -1,0 +1,3 @@
+#!X:\Python27\python.exe
+from tables.scripts.ptdump import main
+main()

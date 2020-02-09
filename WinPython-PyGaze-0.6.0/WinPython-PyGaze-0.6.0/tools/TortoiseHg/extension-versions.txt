@@ -1,0 +1,13 @@
+Extensions/modules included in this TortoiseHg package:
+
+    perfarce:	aa7b72116630	2012-10-23	http://www.kingswood-consulting.co.uk/hg/perfarce/
+     keyring:	5038d4dc7d3f	2012-06-11	https://bitbucket.org/kang/python-keyring-lib/
+   hgkeyring:	c3f5f264335e	2012-09-27	https://bitbucket.org/Mekk/mercurial_keyring/
+     dulwich:	71b73697d24b	2012-03-29	https://bitbucket.org/abderrahim/dulwich/
+    iniparse:	bd83edee7300	2010-06-12	https://bitbucket.org/sborho/iniparse/
+      zipdoc:	a2ca45ccfd64	2011-07-05	https://bitbucket.org/gobell/hg-zipdoc/
+    hgcr-gui:	0436894ee630	2012-09-19	https://bitbucket.org/glimchb/hgcr-gui/
+      projrc:	dbb19b9dd8bb	2012-08-29	https://bitbucket.org/aragost/projrc/
+  python-svn:	1.7.5       	          	http://bitbucket.org/tortoisehg/thg/downloads
+    pygments:	1.5         	          	http://pygments.org/download/
+     pywin32:	217         	          	http://sourceforge.net/projects/pywin32/

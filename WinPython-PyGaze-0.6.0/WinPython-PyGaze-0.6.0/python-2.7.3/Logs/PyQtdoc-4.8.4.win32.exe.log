@@ -1,0 +1,15 @@
+# WPPM package installation log
+# 
+# Package: PyQtdoc v4.8.4
+
+Lib\site-packages\PyQtdoc-4.8.4-py2.7.egg-info
+.\Lib
+.\Lib\site-packages
+.\Lib\site-packages\PyQt4
+.\Lib\site-packages\PyQt4\doc
+.\Lib\site-packages\PyQt4\doc\qch
+.\Lib\site-packages\PyQt4\doc\qch\assistant.qch
+.\Lib\site-packages\PyQt4\doc\qch\designer.qch
+.\Lib\site-packages\PyQt4\doc\qch\linguist.qch
+.\Lib\site-packages\PyQt4\doc\qch\qmake.qch
+.\Lib\site-packages\PyQt4\doc\qch\qt.qch

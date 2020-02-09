@@ -1,0 +1,5 @@
+trialnr	image	imgtime
+0	advertisment.jpg	10001.4796
+1	bikinishop.jpg	10003.0348
+2	EyeLink_II.jpg	10002.4861
+3	lecture.jpg	10002.3399

@@ -1,0 +1,22 @@
+# WPPM package installation log
+# 
+# Package: numexpr v2.0.1
+
+Lib\site-packages\numexpr
+Lib\site-packages\numexpr-2.0.1-py2.7.egg-info
+Lib\site-packages\numexpr\tests
+Lib\site-packages\numexpr\cpuinfo.py
+Lib\site-packages\numexpr\expressions.py
+Lib\site-packages\numexpr\interpreter.pyd
+Lib\site-packages\numexpr\necompiler.py
+Lib\site-packages\numexpr\utils.py
+Lib\site-packages\numexpr\version.py
+Lib\site-packages\numexpr\__config__.py
+Lib\site-packages\numexpr\__init__.py
+Lib\site-packages\numexpr\tests\test_numexpr.py
+Lib\site-packages\numexpr\tests\__init__.py
+Lib\site-packages\numexpr-2.0.1-py2.7.egg-info\dependency_links.txt
+Lib\site-packages\numexpr-2.0.1-py2.7.egg-info\not-zip-safe
+Lib\site-packages\numexpr-2.0.1-py2.7.egg-info\PKG-INFO
+Lib\site-packages\numexpr-2.0.1-py2.7.egg-info\SOURCES.txt
+Lib\site-packages\numexpr-2.0.1-py2.7.egg-info\top_level.txt

@@ -1,0 +1,26 @@
+# WPPM package installation log
+# 
+# Package: xlrd v0.8.0
+
+Lib\site-packages\xlrd
+Lib\site-packages\xlrd-0.8.0-py2.7.egg-info
+Lib\site-packages\xlrd\doc
+Lib\site-packages\xlrd\examples
+Lib\site-packages\xlrd\biffh.py
+Lib\site-packages\xlrd\book.py
+Lib\site-packages\xlrd\compdoc.py
+Lib\site-packages\xlrd\formatting.py
+Lib\site-packages\xlrd\formula.py
+Lib\site-packages\xlrd\info.py
+Lib\site-packages\xlrd\licences.py
+Lib\site-packages\xlrd\sheet.py
+Lib\site-packages\xlrd\timemachine.py
+Lib\site-packages\xlrd\xldate.py
+Lib\site-packages\xlrd\xlsx.py
+Lib\site-packages\xlrd\__init__.py
+Lib\site-packages\xlrd\doc\compdoc.html
+Lib\site-packages\xlrd\doc\xlrd.html
+Lib\site-packages\xlrd\examples\namesdemo.xls
+Lib\site-packages\xlrd\examples\xlrdnameAPIdemo.py
+Scripts\runxlrd.py
+Scripts\runxlrd.bat

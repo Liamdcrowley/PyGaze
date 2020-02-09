@@ -1,0 +1,20 @@
+# WPPM package installation log
+# 
+# Package: psutil v0.6.1
+
+Lib\site-packages\psutil
+Lib\site-packages\psutil-0.6.1-py2.7.egg-info
+Lib\site-packages\_psutil_mswindows.pyd
+Lib\site-packages\psutil\error.py
+Lib\site-packages\psutil\_common.py
+Lib\site-packages\psutil\_compat.py
+Lib\site-packages\psutil\_psbsd.py
+Lib\site-packages\psutil\_pslinux.py
+Lib\site-packages\psutil\_psmswindows.py
+Lib\site-packages\psutil\_psosx.py
+Lib\site-packages\psutil\_psposix.py
+Lib\site-packages\psutil\__init__.py
+Lib\site-packages\psutil-0.6.1-py2.7.egg-info\dependency_links.txt
+Lib\site-packages\psutil-0.6.1-py2.7.egg-info\PKG-INFO
+Lib\site-packages\psutil-0.6.1-py2.7.egg-info\SOURCES.txt
+Lib\site-packages\psutil-0.6.1-py2.7.egg-info\top_level.txt
