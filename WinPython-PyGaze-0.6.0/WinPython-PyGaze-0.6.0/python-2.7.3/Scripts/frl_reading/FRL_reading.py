@@ -23,7 +23,34 @@ log = Logfile()
 log.write(["gazepos", "trialnr", "trialstart", "trialend", "duration", "image"])
 
 # run trials
-tracker.calibrate()
+# tracker.calibrate()
+# for trialnr in range(0,len(IMAGES)):
+# 	# blank display
+# 	disp.fill()
+# 	disp.show()
+# 	libtime.pause(1000)
+# 	# prepare stimulus
+# 	scr.clear()
+# 	scr.draw_image(IMAGES[trialnr])
+# 	# start recording eye movements
+# 	tracker.drift_correction()
+# 	tracker.start_recording()
+# 	tracker.status_msg("trial %d" % trialnr)
+# 	tracker.log("start trial %d" % trialnr)
+# 	# present stimulus
+# 	response = None
+# 	trialstart = libtime.get_time()
+# 	while not response:
+# 		frl = FRL(pos='center', dist=125, size=200)
+# 		gazepos = tracker.sample()
+# 		frl.update(disp, scr, gazepos)
+# 		response, presstime = kb.get_key(timeout=1)
+#
+# 	scr.draw_image(IMAGES[trialnr])
+# 	frl = FRL(pos='center', dist=125, size=200000)
+# 	frl.update(disp, scr, gazepos)
+# 	libtime.pause(1000)
+
 for trialnr in range(0,len(IMAGES)):
 	# blank display
 	disp.fill()
@@ -32,6 +59,8 @@ for trialnr in range(0,len(IMAGES)):
 	# prepare stimulus
 	scr.clear()
 	scr.draw_image(IMAGES[trialnr])
+	disp.fill(screen=scr)
+	disp.show()
 	# start recording eye movements
 	tracker.drift_correction()
 	tracker.start_recording()
@@ -41,14 +70,13 @@ for trialnr in range(0,len(IMAGES)):
 	response = None
 	trialstart = libtime.get_time()
 	while not response:
-		frl = FRL(pos='center', dist=125, size=200)
+		scr.clear()
+		scr.draw_image(IMAGES[trialnr])
 		gazepos = tracker.sample()
-		frl.update(disp, scr, gazepos)
+		scr.draw_circle(pos=gazepos, r=10, fill=True, colour=(0,255,0))
+		disp.fill(screen=scr)
+		disp.show()
 		response, presstime = kb.get_key(timeout=1)
-
-	scr.draw_image(IMAGES[trialnr])
-	frl = FRL(pos='center', dist=125, size=200000)
-	frl.update(disp, scr, gazepos)
 	libtime.pause(1000)
 
 	# stop tracking and process input

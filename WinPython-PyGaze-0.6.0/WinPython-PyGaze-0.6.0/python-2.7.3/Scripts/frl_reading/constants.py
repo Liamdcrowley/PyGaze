@@ -10,10 +10,6 @@ DATADIR = os.path.join(DIR, 'data')
 LOGFILE = os.path.join(DATADIR, LOGFILENAME) # .txt; adding path before logfilename is optional; logs responses (NOT eye movements, these are stored in an EDF file!)
 RESDIR = os.path.join(DIR, 'resources')
 IMAGES = [os.path.join(RESDIR, 'screenshot1.jpg'),
-	os.path.join(RESDIR, 'screenshot2.jpg'),
-	os.path.join(RESDIR, 'screenshot3.jpg'),
-	os.path.join(RESDIR, 'screenshot4.jpg'),
-	os.path.join(RESDIR, 'screenshot5.jpg'),
 	]
 
 # DISPLAY
