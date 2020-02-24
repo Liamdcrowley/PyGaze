@@ -1,0 +1,6 @@
+gazepos	trialnr	trialstart	trialend	duration	image
+(676, 566)	0	4845.9839	5620.6225	774.6386	E:\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\screenshot1.jpg
+(666, 572)	1	8180.5669	9780.7689	1600.202	E:\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\screenshot2.jpg
+(625, 606)	2	12892.2788	13500.8723	608.5935	E:\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\screenshot3.jpg
+(650, 556)	3	16324.1382	16811.2729	487.1347	E:\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\screenshot4.jpg
+(645, 521)	4	19700.0511	20060.3279	360.2768	E:\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\screenshot5.jpg

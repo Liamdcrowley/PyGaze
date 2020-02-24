@@ -20,7 +20,7 @@ frl = FRL(pos='center', dist=125, size=200)
 # input collection and storage
 kb = Keyboard(keylist=['escape','space'], timeout=None)
 log = Logfile()
-log.write(["trialnr", "trialstart", "trialend", "duration", "image"])
+log.write(["gazepos", "trialnr", "trialstart", "trialend", "duration", "image"])
 
 # run trials
 tracker.calibrate()
@@ -54,7 +54,7 @@ for trialnr in range(0,len(IMAGES)):
 	# stop tracking and process input
 	tracker.stop_recording()
 	tracker.log("stop trial %d" % trialnr)
-	log.write([trialnr, trialstart, presstime, presstime-trialstart, IMAGES[trialnr]])
+	log.write([gazepos, trialnr, trialstart, presstime, presstime-trialstart, IMAGES[trialnr]])
 
 # close experiment
 log.close()
