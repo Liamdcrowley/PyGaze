@@ -1,2 +1,2 @@
 gazepos	trialnr	trialstart	trialend	duration	image
-(702, 520)	0	4045.7396	18269.8774	14224.1378	E:\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\screenshot1.jpg
+(982, 443)	0	3034.5646	14546.9114	11512.3468	C:\Users\Liam\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\screenshot1.jpg

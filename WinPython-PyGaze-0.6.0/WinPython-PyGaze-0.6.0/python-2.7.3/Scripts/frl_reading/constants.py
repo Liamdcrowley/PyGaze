@@ -16,7 +16,7 @@ IMAGES = [os.path.join(RESDIR, 'screenshot1.jpg'),
 # used in libscreen; the values may be adjusted, but not the constant's names
 SCREENNR = 0 # number of the screen used for displaying experiment
 DISPTYPE = 'pygame' # either 'psycho' or 'pygame'
-DISPSIZE = (1280,1024) # canvas size
+DISPSIZE = (1920,1080) # canvas size
 SCREENSIZE = (39.9,29.9) # physical screen size
 MOUSEVISIBLE = False # mouse visibility
 BGC = (127,127,127,255) # backgroundcolour
