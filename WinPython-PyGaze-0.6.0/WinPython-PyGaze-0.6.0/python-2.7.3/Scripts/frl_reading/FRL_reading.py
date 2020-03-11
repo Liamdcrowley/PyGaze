@@ -1,40 +1,46 @@
 import random
 import numpy
 from constants import *
-from pygaze import libtime
+from pygaze import libtime, settings
 from pygaze.libscreen import Display, Screen
 from pygaze.eyetracker import EyeTracker
 from pygaze.libinput import Keyboard
 from pygaze.liblog import Logfile
-from pygaze.libgazecon import FRL
+from pygaze.libgazecon import FRL, MRL
+import pygaze
 
 # timing and initialization
 libtime.expstart()
 
 # visuals
 disp = Display()
+imageScr = Screen()
+stimScr = Screen()
 scr = Screen()
+maskScr = Screen()
 
 # eye tracking
 tracker = EyeTracker(disp)
 frl = FRL(pos='center', dist=125, size=200)
+mrl = MRL(pos='center', dist=125, size=200)
 
 # input collection and storage
-kb = Keyboard(keylist=['escape','space'], timeout=None)
+kb = Keyboard(timeout=None)
 log = Logfile()
 log.write(["gazepos", "trialnr", "trialstart", "trialend", "duration", "image"])
 
 # run trials
 tracker.calibrate()
 
+maskCount = 0
+windowCount = 0
+fullCount = 0
 # run experiment
-for trialnr in range(0,1):
-	#trialType = random.choice(['mask', 'window', 'full'])
-	trialType = 'mask'
-	maskCount = 0
-	windowCount = 0
-	fullCount = 0
-	if (trialType == 'window' and maskCount < 3):
+for trialnr in range(0,len(IMAGES)):
+	trialType = random.choice(['mask', 'window', 'full'])
+	trialMatch = random.choice(['same', 'different'])
+	#trialType = 'window'
+	if (trialType == 'mask' and maskCount < 3):
 		# blank display
 		disp.fill()
 		disp.show()
@@ -52,22 +58,63 @@ for trialnr in range(0,1):
 		tracker.log("start trial %d" % trialnr)
 		# present stimulus
 		response = None
+		scr.clear(colour=(127,127,127))
+		if trialMatch == 'same':
+			imageScr.draw_image(IMAGES[trialnr])
+		elif trialMatch == 'different':
+			imageScr.draw_image(FOILIMAGES[trialnr])
+		else:
+			break
 		trialstart = libtime.get_time()
 		while not response:
-			frl = FRL(pos='center', dist=125, size=200)
+			key, presstime = kb.get_key(timeout=1)
+			if key:
+				if key == 'escape':
+					break
+				if (key == 'y' and trialMatch == 'same'):
+					scr.clear()
+					scr.draw_text(text='YOU ARE RIGHT THEY ARE SAME')
+					disp.fill(screen=scr)
+					disp.show()
+					correct = True
+					libtime.pause(1000)
+					break
+				if (key == 'y' and trialMatch == 'different'):
+					scr.clear()
+					scr.draw_text(text='YOU ARE WRONG THEY ARE DIFFERENT')
+					disp.fill(screen=scr)
+					disp.show()
+					correct = False
+					libtime.pause(1000)
+					break
+				if (key == 'n' and trialMatch == 'same'):
+					scr.clear()
+					scr.draw_text(text='YOU ARE WRONG THEY ARE SAME')
+					disp.fill(screen=scr)
+					disp.show()
+					correct = False
+					libtime.pause(1000)
+					break
+				if (key == 'n' and trialMatch == 'different'):
+					scr.clear()
+					scr.draw_text(text='YOU ARE RIGHT THEY ARE DIFFERENT')
+					disp.fill(screen=scr)
+					disp.show()
+					correct = True
+					libtime.pause(1000)
+					break
+			else:
+				pass
+			mrl = MRL(pos='center', dist=125, size=200)
 			gazepos = tracker.sample()
-			frl.update(disp, scr, gazepos)
-			response, presstime = kb.get_key(timeout=1)
-		scr.draw_image(IMAGES[trialnr])
-		frl = FRL(pos='center', dist=125, size=200000)
-		frl.update(disp, scr, gazepos)
+			mrl.mrlupdate(disp, scr, gazepos, imageScr)
 		libtime.pause(1000)
 		windowCount = windowCount + 1
 		# stop tracking and process input
 		tracker.stop_recording()
 		tracker.log("stop trial %d" % trialnr)
-		log.write([gazepos, trialnr, trialstart, presstime, presstime - trialstart, IMAGES[trialnr]])
-	elif (trialType == 'mask' and windowCount < 3):
+		log.write([trialnr, trialType, correct, trialstart, presstime, presstime - trialstart, IMAGES[trialnr]])
+	elif (trialType == 'window' and windowCount < 3):
 		# blank display
 		disp.fill()
 		disp.show()
@@ -84,23 +131,61 @@ for trialnr in range(0,1):
 		tracker.status_msg("trial %d" % trialnr)
 		tracker.log("start trial %d" % trialnr)
 		# present stimulus
+		scr.clear()
+		if trialMatch == 'same':
+			scr.draw_image(IMAGES[trialnr])
+		else:
+			scr.draw_image(FOILIMAGES[trialnr])
 		response = None
 		trialstart = libtime.get_time()
 		while not response:
-			scr.clear()
-			scr.draw_image(IMAGES[trialnr])
+			key, presstime = kb.get_key(timeout=1)
+			if key:
+				if key == 'escape':
+					break
+				if (key == 'y' and trialMatch == 'same'):
+					scr.clear()
+					scr.draw_text(text='YOU ARE RIGHT THEY ARE SAME')
+					disp.fill(screen=scr)
+					disp.show()
+					correct = True
+					libtime.pause(1000)
+					break
+				if (key == 'y' and trialMatch == 'different'):
+					scr.clear()
+					scr.draw_text(text='YOU ARE WRONG THEY ARE DIFFERENT')
+					disp.fill(screen=scr)
+					disp.show()
+					correct = False
+					libtime.pause(1000)
+					break
+				if (key == 'n' and trialMatch == 'same'):
+					scr.clear()
+					scr.draw_text(text='YOU ARE WRONG THEY ARE SAME')
+					disp.fill(screen=scr)
+					disp.show()
+					correct = False
+					libtime.pause(1000)
+					break
+				if (key == 'n' and trialMatch == 'different'):
+					scr.clear()
+					scr.draw_text(text='YOU ARE RIGHT THEY ARE DIFFERENT')
+					disp.fill(screen=scr)
+					disp.show()
+					correct = True
+					libtime.pause(1000)
+					break
+				else:
+					pass
 			gazepos = tracker.sample()
-			scr.draw_circle(pos=gazepos, r=100, fill=True, colour=(127, 127, 127))
-			disp.fill(screen=scr)
-			disp.show()
-			response, presstime = kb.get_key(timeout=1)
+			frl.update(disp, scr, gazepos)
 		libtime.pause(1000)
-		maskCount = maskCount + 1
+		windowCount = windowCount + 1
 		# stop tracking and process input
 		tracker.stop_recording()
 		tracker.log("stop trial %d" % trialnr)
-		log.write([gazepos, trialnr, trialstart, presstime, presstime-trialstart, IMAGES[trialnr]])
-	elif (trialType == 'full'):
+		log.write([trialnr, trialType, correct, trialstart, presstime, presstime-trialstart, IMAGES[trialnr]])
+	elif (trialType == 'full' and fullCount < 3):
 		# blank display
 		disp.fill()
 		disp.show()
@@ -117,21 +202,60 @@ for trialnr in range(0,1):
 		tracker.status_msg("trial %d" % trialnr)
 		tracker.log("start trial %d" % trialnr)
 		# present stimulus
+		scr.clear()
+		if trialMatch == 'same':
+			scr.draw_image(IMAGES[trialnr])
+		else:
+			scr.draw_image(FOILIMAGES[trialnr])
 		response = None
+		disp.fill(screen=scr)
+		disp.show()
 		trialstart = libtime.get_time()
 		while not response:
-			gazepos = tracker.sample()
-			scr.clear()
-			scr.draw_image(IMAGES[trialnr])
-			disp.fill(screen=scr)
-			disp.show()
-			response, presstime = kb.get_key(timeout=1)
+			key, presstime = kb.get_key(timeout=1)
+			if key:
+				if key == 'escape':
+					break
+				if (key == 'y' and trialMatch == 'same'):
+					scr.clear()
+					scr.draw_text(text='YOU ARE RIGHT THEY ARE SAME')
+					disp.fill(screen=scr)
+					disp.show()
+					correct = True
+					libtime.pause(1000)
+					break
+				if (key == 'y' and trialMatch == 'different'):
+					scr.clear()
+					scr.draw_text(text='YOU ARE WRONG THEY ARE DIFFERENT')
+					disp.fill(screen=scr)
+					disp.show()
+					correct = False
+					libtime.pause(1000)
+					break
+				if (key == 'n' and trialMatch == 'same'):
+					scr.clear()
+					scr.draw_text(text='YOU ARE WRONG THEY ARE SAME')
+					disp.fill(screen=scr)
+					disp.show()
+					correct = False
+					libtime.pause(1000)
+					break
+				if (key == 'n' and trialMatch == 'different'):
+					scr.clear()
+					scr.draw_text(text='YOU ARE RIGHT THEY ARE DIFFERENT')
+					disp.fill(screen=scr)
+					disp.show()
+					correct = True
+					libtime.pause(1000)
+					break
+				else:
+					pass
 		libtime.pause(1000)
 		fullCount = fullCount + 1
 		# stop tracking and process input
 		tracker.stop_recording()
 		tracker.log("stop trial %d" % trialnr)
-		log.write([gazepos, trialnr, trialstart, presstime, presstime - trialstart, IMAGES[trialnr]])
+		log.write([trialnr, trialType, correct, trialstart, presstime, presstime - trialstart, IMAGES[trialnr]])
 
 # close experiment
 log.close()

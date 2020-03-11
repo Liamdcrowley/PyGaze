@@ -9,14 +9,22 @@ DIR = os.path.split(os.path.abspath(__file__))[0]
 DATADIR = os.path.join(DIR, 'data')
 LOGFILE = os.path.join(DATADIR, LOGFILENAME) # .txt; adding path before logfilename is optional; logs responses (NOT eye movements, these are stored in an EDF file!)
 RESDIR = os.path.join(DIR, 'resources')
-IMAGES = [os.path.join(RESDIR, 'screenshot1.jpg'),
-			os.path.join(RESDIR, 'screenshot2.jpg'),
-			os.path.join(RESDIR, 'screenshot3.jpg'),
-		  	os.path.join(RESDIR, 'screenshot4.jpg'),
-		 	os.path.join(RESDIR, 'screenshot5.jpg'),
-		  	os.path.join(RESDIR, 'screenshot6.jpg'),
-		  	os.path.join(RESDIR, 'screenshot7.jpg'),
-			os.path.join(RESDIR, 'screenshot8.jpg')]
+IMAGES = [os.path.join(RESDIR, 'testImages\screenshot1.jpg'),
+			os.path.join(RESDIR, 'testImages\screenshot2.jpg'),
+			os.path.join(RESDIR, 'testImages\screenshot3.jpg'),
+		  	os.path.join(RESDIR, 'testImages\screenshot4.jpg'),
+		 	os.path.join(RESDIR, 'testImages\screenshot5.jpg'),
+		  	os.path.join(RESDIR, 'testImages\screenshot6.jpg'),
+		  	os.path.join(RESDIR, 'testImages\screenshot7.jpg'),
+			os.path.join(RESDIR, 'testImages\screenshot8.jpg')]
+FOILIMAGES = [os.path.join(RESDIR, 'foilImages\screenshot1.jpg'),
+				os.path.join(RESDIR, 'foilImages\screenshot2.jpg'),
+				os.path.join(RESDIR, 'foilImages\screenshot3.jpg'),
+		 	 	os.path.join(RESDIR, 'foilImages\screenshot4.jpg'),
+		 		os.path.join(RESDIR, 'foilImages\screenshot5.jpg'),
+		 	 	os.path.join(RESDIR, 'foilImages\screenshot6.jpg'),
+		 	 	os.path.join(RESDIR, 'foilImages\screenshot7.jpg'),
+				os.path.join(RESDIR, 'foilImages\screenshot8.jpg')]
 
 # DISPLAY
 # used in libscreen; the values may be adjusted, but not the constant's names

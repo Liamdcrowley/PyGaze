@@ -1,0 +1,2 @@
+gazepos	trialnr	trialstart	trialend	duration	image
+(1007, 534)	0	4431.8616	6207.2473	1775.3857	C:\Users\Liam\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\testImages\screenshot1.jpg

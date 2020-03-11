@@ -1,2 +1,8 @@
 gazepos	trialnr	trialstart	trialend	duration	image
-(947, 513)	0	7231.9781	11724.2575	4492.2794	C:\Users\Liam\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\screenshot1.jpg
+0	full	True	4393.514	5812.7857	1419.2717	C:\Users\Liam\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\testImages\screenshot1.jpg
+1	mask	True	10515.148	11421.156	906.008	C:\Users\Liam\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\testImages\screenshot2.jpg
+2	full	True	18695.141	19293.1554	598.0144	C:\Users\Liam\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\testImages\screenshot3.jpg
+3	mask	True	24205.6439	26655.8658	2450.2219	C:\Users\Liam\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\testImages\screenshot4.jpg
+4	mask	True	34431.8245	35264.8653	833.0408	C:\Users\Liam\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\testImages\screenshot5.jpg
+5	mask	True	40870.6139	41626.4004	755.7865	C:\Users\Liam\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\testImages\screenshot6.jpg
+6	full	True	47075.8729	48136.0685	1060.1956	C:\Users\Liam\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\testImages\screenshot7.jpg
