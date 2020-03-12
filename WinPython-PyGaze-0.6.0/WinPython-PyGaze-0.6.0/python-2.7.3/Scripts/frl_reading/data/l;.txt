@@ -1,6 +1,0 @@
-trialnr	trialstart	trialend	duration	image
-0	4298.6526	5242.3632	943.7106	E:\Downloads\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\screenshot1.jpg
-1	8546.4187	12099.4515	3553.0328	E:\Downloads\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\screenshot2.jpg
-2	14215.5562	14654.8948	439.3386	E:\Downloads\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\screenshot3.jpg
-3	17858.4563	18297.1639	438.7076	E:\Downloads\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\screenshot4.jpg
-4	21097.9629	23300.3561	2202.3932	E:\Downloads\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\screenshot5.jpg
