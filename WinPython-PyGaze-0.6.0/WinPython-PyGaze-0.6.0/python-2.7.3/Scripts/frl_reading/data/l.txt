@@ -1,2 +1,1 @@
 trialnr	Trialype	correct	trialstart	trialend	duration	image
-0	full	False	5823.9086	8222.7322	2398.8236	C:\Users\Liam\Documents\GitHub\PyGaze\WinPython-PyGaze-0.6.0\WinPython-PyGaze-0.6.0\python-2.7.3\Scripts\frl_reading\resources\testImages\m086c4b.jpg
