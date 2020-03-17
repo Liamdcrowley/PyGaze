@@ -1,7 +1,7 @@
 import os.path
 
 # MAIN
-DUMMYMODE = False # False for connected eye tracker, True for dummy mode (using mouse or joystick)
+DUMMYMODE = True # False for connected eye tracker, True for dummy mode (using mouse or joystick)
 LOGFILENAME = input("Participant name: ") # logfilename, without path
 
 # DIRECTORY

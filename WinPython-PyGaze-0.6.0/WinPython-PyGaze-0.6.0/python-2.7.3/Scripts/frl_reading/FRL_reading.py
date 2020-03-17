@@ -91,10 +91,6 @@ for trialnr in range(0,len(IMAGES)):
 				if key == 'escape':
 					break
 				if (key == 'y' and trialMatch == 'same'):
-					scr.clear()
-					scr.draw_text(text='YOU ARE RIGHT THEY ARE SAME')
-					disp.fill(screen=scr)
-					disp.show()
 					correct = True
 					libtime.pause(1000)
 					break
